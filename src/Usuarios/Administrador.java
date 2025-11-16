@@ -1,13 +1,14 @@
 package Usuarios;
 import Articulos.Articulo;
 
-public class Administrador {
+public class Administrador extends Usuario{
     public enum Rol { JEFE, VENDEDOR }
     private Rol rol;
 
-    // Constructor
+    // Constructores : completo y vacío
 
-    public Administrador(Rol rol) {
+    public Administrador(String nombreUsuario, String contrasenya, int id, int anyoNacimiento, Rol rol) {
+        super(nombreUsuario, contrasenya, id, anyoNacimiento);
         this.rol = rol;
     }
 
@@ -40,6 +41,6 @@ public class Administrador {
 
     @Override
     public String toString() {
-        return "Cliente " + this.getNombreUsuario() + "(" + this.getId() + ")";
+        return "Administrador " + getNombreUsuario() + " (" + getId() + ")";
     }
 }
