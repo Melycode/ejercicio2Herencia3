@@ -1,11 +1,13 @@
 package Usuarios;
 import Articulos.Articulo;
 
+
+// Creo la clase cliente que es una extensión de usuario
 public class Cliente extends Usuario {
     private Articulo articulo;
     private int numSocio;
 
-    // Constructores
+    // Constructores: todos y vacío
 
     public Cliente(String nombreUsuario, String contrasenya, int id, int anyoNacimiento, Articulo articulo, int numSocio) {
         super(nombreUsuario, contrasenya, id, anyoNacimiento);
@@ -16,7 +18,7 @@ public class Cliente extends Usuario {
     public Cliente() {
     }
 
-    // Getter y setters
+    // Getter and setters: todos
 
     public Articulo getArticulo() {
         return articulo;
@@ -37,13 +39,14 @@ public class Cliente extends Usuario {
 
     //Metodo
 
+    // Creo el metodo calcularPrecio(numArticulos, dias) que devuelva el precio total para un número de artículos y un número de días, teniendo en cuenta el artículo del cliente
+
     public double calcularPrecio( int numArticulos, int dias) {
         return this.getArticulo().calcularPrecio(numArticulos, dias);
     }
 
 
-
-    // To string
+    // To string: : devuelve
 
     @Override
     public String toString() {

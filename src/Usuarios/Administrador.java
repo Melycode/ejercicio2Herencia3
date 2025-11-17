@@ -1,11 +1,13 @@
 package Usuarios;
 import Articulos.Articulo;
 
+
+// creo la clase administrador que es una extensión de usuario
 public class Administrador extends Usuario{
     public enum Rol { JEFE, VENDEDOR }
     private Rol rol;
 
-    // Constructores : completo y vacío
+    // Constructores: todos y vacío
 
     public Administrador(String nombreUsuario, String contrasenya, int id, int anyoNacimiento, Rol rol) {
         super(nombreUsuario, contrasenya, id, anyoNacimiento);
@@ -15,7 +17,7 @@ public class Administrador extends Usuario{
     public Administrador() {
     }
 
-    // Getters y setters
+    // Getter and setters: todos
 
     public Rol getRol() {
         return rol;
@@ -27,16 +29,19 @@ public class Administrador extends Usuario{
 
 
     // Metodos
+
+    // Creo el metodo asignarArticulo(cliente, articulo) que asigne un artículo a un usuario
     public void asignarArticulo(Usuario usuario, Articulo articulo) {
         ((Cliente) usuario).setArticulo(articulo);
     }
 
+    // Creo el metodo retirarArticulo(cliente) que elimine el artículo del usuario
     public void retirarArticulo(Usuario usuario) {
         ((Cliente) usuario).setArticulo(null);
     }
 
 
-    // To String
+    // To String : devuelve
 
 
     @Override

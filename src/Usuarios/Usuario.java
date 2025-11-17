@@ -1,12 +1,13 @@
 package Usuarios;
 
+// Creo la clase usuario con sus atributos
 public class Usuario {
     private String nombreUsuario;
     private String contrasenya;
     private int id;
     private int anyoNacimiento;
 
-    // Constructores
+    // Constructores: todos y vacío
 
     public Usuario(String nombreUsuario, String contrasenya, int id, int anyoNacimiento) {
         this.nombreUsuario = nombreUsuario;
@@ -18,7 +19,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    // Getter and setters
+    // Getter and setters: todos
     public String getNombreUsuario() {
         return nombreUsuario;
     }
@@ -53,17 +54,21 @@ public class Usuario {
 
     // Metodos
 
+    // Creo el metodo esAdulto() que devuelva true si tiene 18 años o más (tomando 2025 como año actual)
+
     public boolean esAdulto() {
         int edad = 2025 - anyoNacimiento;
         return  edad >= 18;
     }
 
 
+    // Creo el metodo contrasenyaSegura() que devuelva true si la contraseña tiene más de 10 caracteres
     public boolean contrasenyaSegura() {
+
         return this.contrasenya.length() > 10;
     }
 
-    // To string
+    // To string : devuelve
 
     @Override
     public String toString() {
