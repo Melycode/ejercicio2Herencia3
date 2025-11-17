@@ -1,7 +1,4 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
-package Main;
-
 import Articulos.Libro;
 import Articulos.Pelicula;
 import Usuarios.Cliente;
