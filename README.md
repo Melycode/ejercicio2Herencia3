@@ -64,9 +64,11 @@ c.- Administrador, que hereda de Usuario, con los siguientes elementos:
 
 4.- Crear el diagrama **UML** de todas las clases
 
-<img width="1156" height="473" alt="articulos1" src="https://github.com/user-attachments/assets/a114723f-9521-4998-b48a-dee89f0e96bf" />
+<img width="1158" height="462" alt="Articulo" src="https://github.com/user-attachments/assets/8193b278-38e4-4b28-9acc-302c8c81b14c" />
 
-<img width="667" height="446" alt="usuario1" src="https://github.com/user-attachments/assets/c79197c3-94c3-42d8-8080-adecb65a0b34" />
+
+<img width="859" height="500" alt="Usuario" src="https://github.com/user-attachments/assets/3acb37b8-fb1a-4e05-af35-7c72aab3e829" />
+
 
 
 
