@@ -1,4 +1,4 @@
-package Articulos;
+package articulos;
 
 
 // Creo la clase artìculo con sus atributos
@@ -58,6 +58,6 @@ public class Articulo {
     // To string : devuelve
     @Override
     public String toString() {
-        return "Artículo " + this.titulo + "( " + this.precioPorDia + " €/día)";
+        return "Artículo " + this.titulo + " (" + this.precioPorDia + " €/día)";
     }
 }

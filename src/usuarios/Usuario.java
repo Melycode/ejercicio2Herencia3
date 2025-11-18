@@ -1,4 +1,4 @@
-package Usuarios;
+package usuarios;
 
 // Creo la clase usuario con sus atributos
 public class Usuario {

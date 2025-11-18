@@ -1,4 +1,4 @@
-package Articulos;
+package articulos;
 
 // creo la clase videojuegos que se extiende de articulo
 

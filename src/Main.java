@@ -1,10 +1,10 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import Articulos.Libro;
-import Articulos.Pelicula;
-import Usuarios.Cliente;
-import Usuarios.Administrador;
-import Articulos.AlbumMusica;
-import Articulos.Videojuego;
+import articulos.Libro;
+import articulos.Pelicula;
+import usuarios.Cliente;
+import usuarios.Administrador;
+import articulos.AlbumMusica;
+import articulos.Videojuego;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,8 +19,9 @@ public class Main {
         AlbumMusica album1 = new AlbumMusica("Don Juan", 2023, 3.0, "Maluma", 9, false);
         AlbumMusica album2 = new AlbumMusica("Grandes baladas", 2002, 6.0, "David Bisbal", 10, true);
 
-        Videojuego juego1 = new Videojuego("The Witcher 3", 2015, 7, "PC, PS4, Xbox", "Steam", 8);
-        Videojuego juego2 = new Videojuego("Zelda: Tears of the Kingdom", 2025, 5, "Switch", "Steam", 18);
+        Videojuego juego1 = new Videojuego("The Witcher 3", 2015, 7, "CD Projekt", "PC, PS4, Xbox", 18);
+        Videojuego juego2 = new Videojuego("Zelda: Tears of the Kingdom", 2025, 5, "Nintendo", "Switch", 12);
+
 
         // 2. Creo 2 clientes
         Cliente cliente1 = new Cliente("Julián", "contrasena123456", 1, 2004, libro1, 1001);
@@ -43,5 +44,14 @@ public class Main {
 
         System.out.println("--------");
         System.out.println(admin);
+
+        System.out.println("--------");
+        pelicula2.getDuracionHorasYMinutos();
+        System.out.println("--------");
+        System.out.println(cliente1.esAdulto());
+        System.out.println("--------");
+        System.out.println(cliente2.esAdulto());
+
+
     }
 }

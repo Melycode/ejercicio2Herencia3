@@ -1,4 +1,4 @@
-package Articulos;
+package articulos;
 
 // creo la clase albummusica que es una extensión de artìculo con sus atributos
 public class AlbumMusica extends Articulo {

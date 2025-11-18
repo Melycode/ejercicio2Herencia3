@@ -1,5 +1,5 @@
-package Usuarios;
-import Articulos.Articulo;
+package usuarios;
+import articulos.Articulo;
 
 
 // creo la clase administrador que es una extensión de usuario

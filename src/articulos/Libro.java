@@ -1,11 +1,11 @@
-package Articulos;
+package articulos;
 
 // Creo la clase libro que es una extensión de articulo
 
 public class Libro extends Articulo {
     private String autor;
     private int numPaginas;
-    public enum Genero { MISTERIO, TERROR, ACCION, FANTASIA}
+    public enum Genero { MISTERIO, TERROR, ACCION, FANTASIA, HISTORIA}
     private Genero genero;
 
     //Constructores: todos, vacío y uno con titulo, anyoLanzamiento, autor, precioPorDia y genero, que ponga numPaginas a 100.

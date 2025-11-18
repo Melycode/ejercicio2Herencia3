@@ -1,5 +1,5 @@
-package Usuarios;
-import Articulos.Articulo;
+package usuarios;
+import articulos.Articulo;
 
 
 // Creo la clase cliente que es una extensión de usuario

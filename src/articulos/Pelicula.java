@@ -1,4 +1,4 @@
-package Articulos;
+package articulos;
 
 
 // creo la clase pelicula que es una extensión de articulo
@@ -43,6 +43,7 @@ public class Pelicula extends Articulo {
     public void getDuracionHorasYMinutos() {
         int horas = this.duracion / 60;
         int minutos = this.duracion % 60;
+        System.out.println(horas + " horas y " + minutos + " minutos");
     }
 
     // creo el metodo getDuracionSegundos() que devuelva la duración en segundos
@@ -57,10 +58,5 @@ public class Pelicula extends Articulo {
     public String toString() {
         return "Película " + this.getTitulo()  + " de " + this.director + " (" + this.getPrecioPorDia() + " €/día)";
     }
-
-
-
-
-
 
 }
